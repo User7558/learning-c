@@ -4,6 +4,12 @@ int main (void){
     FILE *arq;
     arq = fopen("entrada.txt", "rt");
 
+    if (arq == NULL){
+        printf("Erro");
+        system("pause");
+        return 0;
+    }
+
     int cv;
     float vm, c1, c2, salario;
 
@@ -12,8 +18,8 @@ int main (void){
     c2 = vm * 0.3;
     salario = c1 + c2 + 2000.00;
 
-    printf("%d, %f", cv, vm);
-    printf("O salario do mes do vendedor sera de R$%.2f", salario);
+    printf("%d, %f\n", cv, vm);
+    printf("O salario do mes do vendedor sera de R$%.2f\n", salario);
 
     fclose(arq);
     return 0;
