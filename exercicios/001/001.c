@@ -4,7 +4,7 @@ main ()
 {
     float valor_sd, valor_cd;
 
-    printf("Informe o valor do produto:\n");
+    printf("Informe o valor do produto: ");
     scanf("%f", &valor_sd);
 
     valor_cd = valor_sd - (valor_sd * 0.3);

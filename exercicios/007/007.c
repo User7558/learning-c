@@ -25,4 +25,6 @@ int main(void){
     salariol = salariob - (salariob * percent_inss);
 
     printf("O salario liquido de um professor e de R$%.2f \n", salariol);
+
+    return 0;
 }
