@@ -6,7 +6,7 @@ int main()
 
     printf("Insira o valor do salario minimo atual: \nR$");
     scanf("%f", &salario);
-    printf("\nInsira a quantidade de quilowatts consumidos na residencia: \n");
+    printf("Insira a quantidade de quilowatts consumidos na residencia: ");
     scanf("%f", &kw);
 
     cobrado = (salario/5) * kw;

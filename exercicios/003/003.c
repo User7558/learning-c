@@ -5,7 +5,7 @@ int main()
     int c;
     float f;
 
-    printf("Insira a temperatura em Celsius:\n");
+    printf("Insira a temperatura em Celsius: ");
     scanf("%d", &c);
 
     f = (9*c/5) + 32;
