@@ -4,8 +4,10 @@ int main (void){
 
 float h, r, area, latas_n, custo;
 
-h = 10;
-r = 5;
+printf("Digite a altura do cilindro: ");
+scanf("%f", &h);
+printf("Digite o raio do cilindro: ");
+scanf("%f", &r);
 
 area = 2 * 3.14 * r*(r+h);
 latas_n = area / 15;
