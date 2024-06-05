@@ -15,7 +15,7 @@ int main(void){
 
     fscanf(arq, "%f %d %d", &vha, &ha, &inss);
 
-    percent_inss = inss/100.0;
+    percent_inss = inss/100;
     salariob = vha*ha;
     salariol = salariob - (salariob * percent_inss);
 
