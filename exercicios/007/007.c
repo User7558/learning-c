@@ -10,21 +10,17 @@ int main(void){
         return 0;
     }
 
-    int ha, c, inss;
+    int ha, inss;
     float vha, salariol, salariob, percent_inss;
 
-    fscanf(arq, "%f, %d, %d", &vha, &ha, &inss);
+    fscanf(arq, "%f %d %d", &vha, &ha, &inss);
 
-    c = 1;
-    while (c != inss) {
-        percent_inss += 0.01;
-        c += 1;
-    }
-
+    percent_inss = inss/100.0;
     salariob = vha*ha;
     salariol = salariob - (salariob * percent_inss);
 
     printf("O salario liquido de um professor e de R$%.2f \n", salariol);
 
+    fclose(arq);
     return 0;
 }
