@@ -10,10 +10,9 @@ int main(void){
         return 0;
     }
 
-    int ha, inss;
-    float vha, salariol, salariob, percent_inss;
+    float vha, salariol, salariob, percent_inss, ha, inss;
 
-    fscanf(arq, "%f %d %d", &vha, &ha, &inss);
+    fscanf(arq, "%f %f %f", &vha, &ha, &inss);
 
     percent_inss = inss/100;
     salariob = vha*ha;

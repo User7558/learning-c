@@ -3,15 +3,14 @@
 
 int main (void){
 
-int a, b, c;
-float r1, r2;
+float r1, r2, a, b, c;
 
 printf("Insira a variavel A: ");
-scanf("%d", &a);
+scanf("%f", &a);
 printf("Insira a variavel B: ");
-scanf("%d", &b);
+scanf("%f", &b);
 printf("Insira a variavel C: ");
-scanf("%d", &c);
+scanf("%f", &c);
 
 r1 = (a*b/c)+b+(5*c/a)-1;
 r2 = pow(a*b*c, 3)/2024;
