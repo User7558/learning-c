@@ -1,25 +1,16 @@
 #include <stdio.h>
 
 int main(void){
-    FILE *arq;
-    arq = fopen("entrada.txt", "rt");
-
-    if (arq == NULL){
-        printf("Erro");
-        system("pause");
-        return 0;
-    }
-
     float vha, salariol, salariob, percent_inss, ha, inss;
 
-    fscanf(arq, "%f %f %f", &vha, &ha, &inss);
+    scanf("%f", &vha);
+    scanf("%f", &ha);
+    scanf("%f", &inss);
 
     percent_inss = inss/100;
     salariob = vha*ha;
-    salariol = salariob - (salariob * percent_inss);
+    salariol = salariob - (salariob * (inss/100));
 
-    printf("O salario liquido de um professor e de R$%.2f \n", salariol);
-
-    fclose(arq);
+    printf("%.1f", salariol);
     return 0;
 }

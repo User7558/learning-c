@@ -8,5 +8,5 @@ scanf("%d", &min);
 
 seg = 60 * min;
 
-printf("%d minutos = %d segundos \n", min, seg);
+printf("%d minutos = %d segundos", min, seg);
 }

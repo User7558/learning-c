@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-int main (void){
+int main (){
 float altura_degrau, altura_desejada, degraus_necessarios;
 
-altura_degrau = 30.5;
-altura_desejada = 100;
+scanf("%f", &altura_degrau);
+scanf("%f", &altura_desejada);
 
 degraus_necessarios = altura_desejada / altura_degrau;
 
-printf("Para alcancar %.2fcm, serao necessarios %.1f degraus.\n", altura_desejada, degraus_necessarios);
+printf("%.1f", degraus_necessarios);
 }

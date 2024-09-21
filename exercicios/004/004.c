@@ -4,14 +4,12 @@ int main()
 {
     float salario, kw, desconto, cobrado;
 
-    printf("Insira o valor do salario minimo atual: \nR$");
     scanf("%f", &salario);
-    printf("Insira a quantidade de quilowatts consumidos na residencia: ");
     scanf("%f", &kw);
 
     cobrado = (salario/5) * kw;
     cobrado = cobrado - (cobrado * 0.15);
 
-    printf("O valor a ser pago sera de R$%.2f", cobrado);
+    printf("%.2f", cobrado);
     return 0;
 }

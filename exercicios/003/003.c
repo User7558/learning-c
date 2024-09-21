@@ -2,14 +2,12 @@
 
 int main()
 {
-    int c;
-    float f;
+    float c, f;
 
-    printf("Insira a temperatura em Celsius: ");
-    scanf("%d", &c);
+    scanf("%f", &c);
 
     f = (9*c/5) + 32;
 
-    printf("Convertendo para Fahrenheit teremos %.1f graus.", f);
+    printf("%.1f", f);
     return 0;
 }
